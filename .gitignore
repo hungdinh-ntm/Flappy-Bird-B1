@@ -1,0 +1,30 @@
+# --- Chặn các thư mục tạm cực nặng (Nguyên nhân gây lỗi GitHub) ---
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Builds]/
+/[Logs]/
+/[MemoryCaptures]/
+/[UserSettings]/
+
+# --- Chặn các file rác của Visual Studio & Hệ thống ---
+.vs/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unitypackage
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svntmp
+*.dwlt
+*.swp
+*.lock
+*.DS_Store
+DerivedData/
