@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class UIResult : LoadMonoBehaviour
+public class UIScore : LoadMonoBehaviour
 {
-    [Header("UI Result")]
+    [Header("UI Score")]
     [SerializeField] protected TextMeshProUGUI numScore;
     public TextMeshProUGUI NumScore => numScore;
 
@@ -19,11 +19,6 @@ public class UIResult : LoadMonoBehaviour
     {
         if (this.numScore != null) return;
         this.numScore = transform.Find("NumScore").GetComponent<TextMeshProUGUI>();
-        Debug.LogWarning(transform.name + ": LoadNumScore", gameObject);
-    }
-
-    public virtual void SetScore(int score)
-    {
-        this.numScore.text = score.ToString();
+        //Debug.LogWarning(transform.name + ": LoadNumScore", gameObject);
     }
 }

@@ -65,6 +65,7 @@ public class GameManager : LoadMonoBehaviour
 
         BirdCtrl.Instance.BirdGravity.StopBird();
         this.uiGameOver.ShowResult(gameScore);
+        SaveManager.SaveBestScore(gameScore);
     }
 
     public virtual void AddScore()
