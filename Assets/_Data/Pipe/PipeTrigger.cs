@@ -7,6 +7,7 @@ public class PipeTrigger : LoadMonoBehaviour
 {
     [Header("Pipe Trigger")]
     [SerializeField] protected BoxCollider2D boxCollider2D;
+    public BoxCollider2D BoxCollider2D => this.boxCollider2D;
 
     protected override void LoadComponent()
     {
@@ -22,7 +23,7 @@ public class PipeTrigger : LoadMonoBehaviour
 
         this.boxCollider2D.isTrigger = true;
         this.boxCollider2D.offset = new Vector2(0.25f, 0);
-        this.boxCollider2D.size = new Vector2(0.5f, 3.6f);
+        //this.boxCollider2D.size = new Vector2(0.5f, 3.6f);
     }
 
     protected void OnTriggerEnter2D(Collider2D collision)

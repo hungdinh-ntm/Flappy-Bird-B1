@@ -64,6 +64,7 @@
     <Compile Include="Assets\_Data\Spawner\Spawner.cs" />
     <Compile Include="Assets\_Data\Despawn\Despawn.cs" />
     <Compile Include="Assets\_Data\Spawner\PipeSpawner.cs" />
+    <Compile Include="Assets\_Data\Pipe\PipeRanSpace.cs" />
     <Compile Include="Assets\_Data\Pipe\PipeDespawn.cs" />
     <Compile Include="Assets\_Data\UI\Button\BaseButton.cs" />
     <Compile Include="Assets\_Data\Pipe\PipeSpawnPoint.cs" />

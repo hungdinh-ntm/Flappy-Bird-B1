@@ -44,9 +44,11 @@ public class PipeSpawnPoint : LoadMonoBehaviour
 
         string prefabName = PipeSpawner.PipeOne;
 
+        //Debug.Log("pos: " + pos.y);
         Transform newObj = PipeSpawner.Instance.Spawn(prefabName, pos, rot);
         newObj.gameObject.SetActive(true);
 
+        newObj.GetComponentInChildren<PipeRanSpace>().SetSpace();
         this.spawnTimer = 0f;
     }
 }
